@@ -1,1 +1,2 @@
-console.log('Script loaded...')
+
+require('./coffee/WebSQLDatabase.coffee')
