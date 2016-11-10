@@ -1,0 +1,24 @@
+{
+  "name": "experiments",
+  "version": "1.0.0",
+  "description": "Just a repository for various tests",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -e index.js -o dist/build.js",
+    "watch": "watchify -vd -e index.js -o dist/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToxicTree/ExperimentalPlate.git"
+  },
+  "author": "Jonathan (https://github.com/ToxicTree)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ToxicTree/ExperimentalPlate/issues"
+  },
+  "homepage": "https://github.com/ToxicTree/ExperimentalPlate#readme",
+  "dependencies": {
+    "browserify": "^13.1.1",
+    "watchify": "^3.7.0"
+  }
+}
