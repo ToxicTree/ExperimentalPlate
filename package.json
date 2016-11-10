@@ -4,8 +4,8 @@
   "description": "Just a repository for various tests",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -e index.js -o dist/build.js",
-    "watch": "watchify -vd -e index.js -o dist/build.js"
+    "build": "browserify -t coffeeify -e index.js -o dist/build.js",
+    "watch": "watchify -t coffeeify -vd -e index.js -o dist/build.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ToxicTree/ExperimentalPlate#readme",
   "dependencies": {
     "browserify": "^13.1.1",
+    "coffeeify": "^2.0.1",
     "watchify": "^3.7.0"
   }
 }
